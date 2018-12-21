@@ -1,0 +1,352 @@
+body{
+    padding:0;
+    margin:0;
+}
+
+header{
+    width: 100%;
+    color: white;
+    position: absolute;
+}
+
+header .container{
+    padding-top:30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .headB ul{
+    list-style: none;
+    display: flex;
+}
+
+header .container .headB ul li{
+    margin-left:40px;
+}
+
+header .container .headB ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+@media(min-width:768px){
+    header .container{
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.conA{
+    margin-top:0;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+}
+
+.conA .container {
+    padding-top:270px;
+    color:white;
+}
+@media(min-width:768px){
+    .conA .container{
+        display: flex;
+        max-width: 1100px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .conA .container .title{
+        margin-left:50px;
+        flex:1.5;
+    }
+
+    .conA .container .image{
+        padding-top:30px;
+        flex:1.2;
+    }
+}
+
+.conA .container .title .title-smail{
+    display:flex;
+}
+
+.conA .container .title .title-smail .hor{
+    margin-top:24px;
+    border-top:1px solid white;
+    width: 30px;
+    opacity: 0.4;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.conA .container .title p{
+    margin-bottom: 20px;
+    opacity: 0.4;
+}
+
+.conA .container .title h1{
+    margin-top:25px;
+    font-weight: 100;
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.conA .container .title button{
+    color: salmon;
+    font-size: 18px;
+    padding:10px 30px;
+    background-color: transparent;
+    border: 1px solid salmon;
+}
+
+.conA .container .title button:hover{
+    background-color: salmon;
+    color:white;
+}
+
+.conA .container .title .slide{
+    margin-top: 70px;
+    display: flex;
+}
+
+.conA .container .title .slide p{
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    opacity: 1;
+    margin-top:0;
+}
+
+.conA .container .title .slide button{
+    padding:0;
+    border: none;
+}
+
+.conA .container .title .slide button:hover{
+    background-color:transparent;
+    opacity: 0.6;
+    color:salmon;
+}
+
+.conA .container .title .slide .index h2{
+    margin: 0 20px;
+}
+
+.conA .foot{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:100px;
+    padding-bottom:50px;
+}
+
+.conA .foot button{
+    background-color:transparent;
+    border:none;
+    font-size:30px;
+    color:white;
+}
+
+.conA .foot button:focus{
+    outline:none;
+    cursor:pointer;
+}
+
+.sidebar{
+    top:270px;
+    position: absolute;
+    right:5%;
+    z-index:99;
+}
+
+.sidebar ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar ul .ver{
+    border-left:1px solid white;
+    height:150px;
+    margin-left:8px;
+}
+.sidebar ul li{
+    text-align:center;
+    padding-top:27px;
+}
+.sidebar ul li a{
+    font-size:20px;
+    color:white;
+}
+
+.conB{
+    height: 1000px;
+    background-color: #212121;
+}
+
+.conB .title{
+    display:flex;
+    padding-top:150px;
+}
+
+.conB .title .hor{
+    border-top: 1px solid white;
+    margin-top:95px;
+    flex:1;
+}
+
+.conB .title .content{
+    padding-left:60px;
+    max-width: 1000px;
+    flex:1000px;
+}
+
+.conB .title .content p{
+    color:white;
+    opacity: 0.4;
+    margin-bottom:5px;
+}
+
+.conB .title .content h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    margin-top:15px;
+    color: salmon;
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.conB .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conB .container .prev{
+    width:175px;
+}
+
+.conB .container .next{
+    width: 175px;
+}
+
+.conB .container .cur{
+    color:white;
+    width:950px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conB .container .cur .pic{
+    margin-top:20px;
+    flex:1;
+    box-shadow: 3px 3px 20px #171717;
+}
+
+.conB .container .cur .content{
+    flex: 1;
+    background-color: #292929;
+    box-shadow: 3px 3px 20px #111111;
+    height: 550px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.conB .container .cur .content .inner{
+    margin:40px 40px;
+}
+
+.conB .container .cur .content .inner #smail{
+    opacity: 0.2;
+    margin-bottom:40px;
+}
+
+.conB .container .cur .content .inner #title{
+    font-weight: 100;
+    font-family: 'Playfair Display', serif;
+    font-size:24px;
+    letter-spacing: 2px;
+}
+
+.conB .container .cur .content .inner #content {
+    opacity: 0.6;
+    letter-spacing: 1px;
+    margin-top:40px;
+    margin-bottom: 50px;
+}
+
+.conB .container .cur .content .inner i{
+    margin-right: 10px;
+}
+
+.conB .container .cur .content .inner #icon{
+    opacity: 0.8;
+}
+
+.conB .container .cur .content .inner button{
+    margin-top:40px;
+    color: salmon;
+    font-size: 18px;
+    padding:10px 30px;
+    background-color: transparent;
+    border: 1px solid salmon;
+}
+
+.conB .container .cur .content .inner button:hover{
+    background-color: salmon;
+    color:white;
+    cursor:pointer;
+}
+
+.conB .container .cur .content .inner button:focus{
+    outline:none;
+}
+
+.conB .container .prev{
+    display:flex;
+    height: 300px;
+    box-shadow: 3px 3px 20px #111111;
+}
+
+.conB .container .prev .pic{
+    flex:1.5;
+    background-image: linear-gradient(rgba(48,48,48,0.4),rgba(48,48,48,0.4)),url(img/1.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+.conB .container .prev .content{
+    width:50px;
+    padding-left:10px;
+    padding-right:0;
+    flex:1;
+    background-color: #393939;
+}
+
+.conB .container .prev .content h2{
+    font-size:16px;
+    opacity: 0.4;
+}
+
+.conB .container .prev .content .smail-title{
+    transform: rotate(-90deg);
+    
+}
+
+.conB .container .prev .content .smail-title p{
+    color:white;
+    font-weight: 100;
+    font-family: 'Playfair Display', serif; 
+    transform: translate(-100px, -5px);
+    white-space: nowrap;
+}
+
+.conB .container .prev .content .smail-title .hor{
+    border-top:1px solid white;
+    width:100px;
+    margin-top:100px;
+}
